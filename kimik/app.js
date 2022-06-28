@@ -38,7 +38,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index.pug')
 });
 app.get('/', (req, res) => {
   res.render('index', {
