@@ -44,4 +44,7 @@ app.get('/', (req, res) => {
   res.render('index', {
       title: 'Homepage'
 });});
+app.get('/', (req, res) => {
+  res.render("tc.html") 
+});});
 module.exports = app;
