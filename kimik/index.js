@@ -6,9 +6,7 @@ var port = 8080;
 
 app.use(express.static(__dirname + ‘/public’));
 
-app.get(‘/’, (req, res) => {
-
-return res.render(‘index’);
-
+app.get('/home', (req, res) => {
+  res.render('tc.html', {name: 'hsc'});
 });
         
